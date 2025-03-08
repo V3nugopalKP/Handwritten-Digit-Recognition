@@ -45,15 +45,11 @@ Open your terminal or command prompt and run:
 
 
 git clone https://github.com/V3nugopalKP/Handwritten-Digit-Recognition.git
+
 cd Handwritten-Digit-Recognition
 
-### ✅ Step 2: Install Dependencies
-Install the required Python packages using:
 
-
-
-pip install -r requirements.txt
-### ✅ Step 3: Run The Flask App
+### ✅ Step 2: Run The Flask App
 Run the following command to start the Flask application:
 
 
@@ -63,7 +59,7 @@ Open your browser and navigate to:
 
 
 http://localhost:5000
-### ✅ Step 4: Upload Image
+### ✅ Step 3: Upload Image
 Upload any image of a handwritten digit (0-9).
 
 Click on Predict.
