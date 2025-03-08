@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2196F3; /* Blue */
+}
+
+/* File Upload Form */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.file-upload-label {
+    background: #2196F3; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.file-upload-label:hover {
+    background: #1976D2; /* Darker Blue */
+}
+
+.file-upload-label input[type="file"] {
+    display: none;
+}
+
+/* Predict Button */
+.predict-button {
+    background: #2196F3; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.predict-button:hover {
+    background: #1976D2; /* Darker Blue */
+}
+
+/* Result Section */
+.result {
+    margin-top: 1.5rem;
+    background: #e3f2fd; /* Light Blue */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.predicted-digit {
+    color: #2196F3; /* Blue */
+    font-weight: bold;
+    font-size: 1.5rem;
+}

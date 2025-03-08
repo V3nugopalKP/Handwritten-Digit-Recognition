@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Handwritten Digit Recognition</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data" class="upload-form">
+            <label for="file-upload" class="file-upload-label">
+                <span>Upload Image</span>
+                <input type="file" id="file-upload" name="file" required>
+            </label>
+            <button type="submit" class="predict-button">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+        <div class="result">
+            <h2>Predicted Digit: <span class="predicted-digit">{{ prediction }}</span></h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
